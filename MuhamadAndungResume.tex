@@ -6,7 +6,7 @@
 
 %This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 \newlength{\outerbordwidth}
 \pagestyle{empty}
 \raggedbottom
@@ -53,19 +53,92 @@
 \newcommand{\ressubheading}[4]{
 \begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
 		\textbf{#1} & #2 \\
-		\textit{#3} & \textit{#4} \\
+        \textit{#3} & \textit{#4} \\
 \end{tabular*}\vspace{-6pt}}
+
+\newcommand{\ressubheadingwithtext}[4]{
+\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+        \textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{2pt}}
+
+\newcommand{\ressubheadingtext}[1]{
+    \textnormal{#1}\vspace{-6pt}
+}
 
 %-----------------------------------------------------------
 \begin{document}
 
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
 
-\textbf{{\Large Scott Clark}} & \textbf{\today} \\
-\texttt{scott@scottclark.io} & \texttt{www.scottclark.io} \\
-\texttt{@DrScottClark} & Not looking for new job opportunities
+\textbf{{\Large Muhamad Andung Muntaha}} & \textbf{\today} \\
+\texttt{muam@kth.se} \\
+\texttt{+46764091032, +6281380260278}
 
 \end{tabular*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Profile}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+A T-Profile software engineer with demonstrated history in delivering professional projects using various technology. I am passionate in writing software to build and integrate complex systems. My skills varies from working with low-level stuff up to building distributed systems. I am now narrowing down my specialty in the area of Real-Time Systems and Embedded Linux. I always learn and implement best practices and design patterns resulting in high quality deliverables.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Work Experience}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+
+\item
+    \ressubheadingwithtext{Scania Sverige}{Stockholm, Sweden}{Thesis Worker in Real-Time Systems}{January 2019 - June 2019}
+    \ressubheadingtext{Working on a real-time system running on RT-Linux for the hardware-in-the-loop integration testing environment. The main task is to ensure that the real-time requirements are met while the system is having different load in order to produce a correct testing result.}
+	\begin{itemize}
+      \resitem{RT-Linux user-space programming in C and C++ utilising the standard library and the POSIX API.}
+      \resitem{Developed Python scripts to automate parameterised execution time data gathering.}
+      \resitem{Analysed the system's schedulability using response time analysis theorem.}
+	\end{itemize}
+
+\item
+    \ressubheadingwithtext{Freelance}{Stockholm, Sweden}{Embedded Linux Developer}{August 2018 - December 2018}
+    \ressubheadingtext{Built a cellular network automatic testing device comprises of a single board computer running embedded Debian Linux, a cellular module connected through serial port, and a touchscreen.}
+	\begin{itemize}
+        \resitem{Developed an application in Qt using C++, JavaScript, and QML.}
+        \resitem{Wrote bash shell scripts to communicate with host's OS features.}
+        \resitem{Implemented communication to cloud backend through HTTPS REST API.}
+	\end{itemize}
+
+\item
+    \ressubheadingwithtext{Ontel AB}{Stockholm, Sweden}{Embedded Software Developer}{March 2018 - December 2019}
+    \ressubheadingtext{Designed and implemented firmware using ARM MbedOS in C++ for IoT edge device satisfying limited power and unreliable network constraint.}
+    \begin{itemize}
+        \resitem{Developed a custom driver for a particular cellular module.}
+        \resitem{Implemented a lightweight and secure communication mechanism to cloud backend using CoAP over UDP utilising DTLS encryption.}
+        \resitem{Implemented communication with subsystems including 3d accelerometer sensor, power management IC, and security module through i2c.}
+    \end{itemize}
+
+\item
+    \ressubheadingwithtext{KTH MIST Student Satellite Project}{Stockholm, Sweden}{Embedded Software Developer}{March 2018 - December 2018}
+    \ressubheadingtext{Responsible in implementing end-to-end communication between ground station and satellite's main onboard computer.}
+    \begin{itemize}
+        \resitem{Designed and implemented a MISRA-C compliance radio communication API in FreeRTOS using C language which communicate to satellite's radio module subsystem through i2c. It uses CCSDS protocol encapsulated in AX.25 protocol.}
+        \resitem{Developed a radio link communication simulator using Arduino boards.}
+        \resitem{Extended the ground station software using Microsoft WPF in C\#.}
+    \end{itemize}
+
+\item
+    \ressubheading{Schlumberger}{Jakarta, Indonesia}{IT Engineer \& Software Developer}{November 2013 - June 2017}
+    \begin{itemize}
+        \resitem{\textbf{Web Development: }Gathered requirements, proposed, and developed new business applications to transform current business processes using Microsoft Sharepoint and JavaScript.}
+        \resitem{\textbf{Mobile Development: }Extended existing business applications to have its mobile version using Microsoft Xamarin and C\#.}
+        \resitem{\textbf{Operation Support: }Managed and ensured the availability of IT Services on site (servers, networking, disaster recovery, etc.) as well as provided second level of user support in handling IT issues.}
+        \resitem{\textbf{Transformation Agent: }Took a role as an enabler in digital transformation by providing business applications based on Lean Six Sigma methodology. It mainly tracked several defined KPI which then provided real-time feedbacks to the stakeholders. Hours of non productive time had been eliminated and million dollars of soft cost saving had been claimed.}
+    \end{itemize}
+
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -76,91 +149,22 @@
 \begin{itemize}
 
 \item
-	\ressubheading{Cornell University}{Ithaca, NY}{Ph.D. Applied Mathematics, M.S. Computer Science}{2008 - 2012}
-	\begin{itemize}
-		\resitem{Department of Energy Computational Science Graduate Fellow (Full Scholarship, 4 years)}
-		\resitem{Machine Learning, Data Science, Data Mining in bioinformatics and global optimization}
-	\end{itemize}
+    \ressubheadingwithtext{KTH, Royal Institute of Technology}{Stockholm, Sweden}{M.Sc. Embedded Systems, minor in Embedded Software}{August 2017 - June 2019}
+    \ressubheadingtext{Completed main courses: }
+    \begin{itemize}
+		\resitem{\textbf{Embedded Systems: }Understanding embedded systems development ranging from realtime task scheduling, cache, memory, I/O, ISR and RTOS. Including a lab assignment which covered realtime application development using ADA and Micro C OS II RTOS running on a single core FPGA.}
+        \resitem{\textbf{Embedded Software: }Thorough task scheduling concept and correct methodology in designing and modelling realtime system. Including a lab assignment to convert images to ASCII art which satisfy a throughput requirement running on multi-core FPGA.}
+        \resitem{\textbf{Software Reliability: }Covered several techniques to generate efficient test cases which covered white box testing, black box testing, and requirement based testing.}
+        \resitem{\textbf{Modern Method in Software Engineering: }Covered ranging methodology in software development life cycle and a lab assignment to practice Agile methodology.}
+        \resitem{\textbf{Networked Systems Security: }Covered fundamental concepts and technologies related to the security of modern, state-of-the-art networked systems.}
+	\end{itemize} 
 
 \item
-	\ressubheading{Oregon State University}{Corvallis, OR}{B.Sc. Mathematics, B.Sc. Computational Physics, B.Sc. Physics}{2004 - 2008}
+	\ressubheading{10 Nopember Institute of Technology}{Surabaya, Indonesia}{B.Sc. Electrical Engineering, minor in Computer Engineering}{2009 - 2013}
 	\begin{itemize}
-    \resitem{Graduated Magna Cum Laude with three Bachelors of Science degrees in four years}
+    \resitem{ Thesis: Self-localization of Humanoid Robot Inside Soccer Field Using Triangulation and Particle Filter Methods.}
+    \resitem{Simulation was done in Webots robot simulator and written in C++ utilising OpenCV library. It then cross compiled to Darwin-OP humanoid robot platform running on embedded Linux.}
 	\end{itemize}
-
-\end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\resheading{Research and Work Experience}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{itemize}
-
-\item
-	\ressubheading{SigOpt Inc}{San Francisco, CA}{Co-founder and CEO}{November 2014 - current}
-	\begin{itemize}
-      \resitem{Helping lead a world class team to eliminate expensive trial and error from every experts workflow. Using cutting edge optimization behind a simple API to help tune machine learning models and build better products in a variety of fields.}
-      \resitem{Raised over \$8.8M in angel, seed, and Series A VC rounds led by Andreessen Horowitz (a16z) and YCombinator (YC W15). Additional investors include SV Angel, Data Collective (DCVC), Blumberg Capital, Stanford University, and others.}
-      \resitem{Presented SigOpt to many thousands of experts and executives in many fields through hundreds of briefings and high profile conferences around the world.}
-	\end{itemize}
-
-\item
-	\ressubheading{Yelp Inc}{San Francisco, CA}{Data Mining Engineer and Lead on Ad Targeting Team}{July 2012 - December 2014}
-	\begin{itemize}
-            \resitem{Co-developed and led team for MOE: the Metric Optimization Engine (\texttt{github.com/Yelp/MOE}, an \textbf{open source} optimization framework), found significant gains in different metrics across the organization using Bayesian Global Optimization algorithms.}
-            \resitem{Implemented multi-armed bandit strategies for ad selection, sole targeting engineer on mobile app ads rollout, developed new location-based targeting algorithms, advised and helped develop other machine learning and math based targeting projects.}
-            \resitem{Created, implemented, and directed \texttt{yelp.com/dataset\_challenge}, gave tech talks across the country, led events, gave hundreds of technical interviews, closed candidates.}
-	\end{itemize}
-
-\item
-	\ressubheading{Bloomberg LP}{New York, NY}{Financial Software Development Intern}{Summer 2011}
-	\begin{itemize}
-    \resitem{Implemented statistical models to perform forward and backward portfolio analysis}
-	\end{itemize}
-
-\item
-	\ressubheading{DOE Joint Genome Institute (Lawrence Berkeley National Lab)}{Walnut Creek, CA}{Researcher in Analysis Group under Dr. Zhong Wang}{Summer 2010}
-	\begin{itemize}
-    \resitem{Used machine learning to mine TBs of genome data efficiently using novel likelihood function}
-	\end{itemize}
-
-\item 
-	\ressubheading{Los Alamos National Laboratory}{Los Alamos, NM}{Researcher in Metagenomics Group under Dr. Nick Hengartner}{Summer 2009}
-	\begin{itemize}
-    \resitem{Used statistical models to discover sequence alignments using parallel algorithms on GPUs}
-	\end{itemize}
-
-\item
-	\ressubheading{Oregon State University}{Corvallis, OR}{Research Assistant under Prof. Malgorzata Peszynska and Prof. Rubin Landau}{2005-2008}
-	\begin{itemize}
-		\resitem{Finite element analysis with uncertainty and web-based teaching in \texttt{Java}}
-	\end{itemize}
-
-\item
-	\ressubheading{Max Plank Institute for the Physics of Complex Systems}{Dresden, Germany}{NSF REU Research Assistant under Prof. Steven Tomsovic}{Summer 2007}
-	\begin{itemize}
-		\resitem{Research on extreme value statistics in \texttt{MATLAB} and \texttt{FORTRAN}}
-	\end{itemize}
-
-\item
-	\ressubheading{University of California: Davis}{Davis, CA}{NSF REU Research Assistant under Prof. Daniel Cox}{Summer 2006}
-	\begin{itemize}
-		\resitem{Computational biophysics research as applied to protein folding in \texttt{Java}}
-	\end{itemize}
-
-\end{itemize}
-
-\resheading{Writing and Awards}
-
-\begin{itemize}
-
-\item {\bf 2016 Forbes 30 Under 30:} Enterprise Tech. \texttt{http://onforb.es/1OILpBZ}
-\item {\bf Department of Energy Computational Science Graduate Fellow:} Four year full fellowship. $\sim$20 awarded nationally per year. Won the Communicating Science award (\texttt{bit.ly/VbcTZK}).
-\item {\bf SigOpt Blog:} Posts talking about using SigOpt to optimize everything (\texttt{blog.sigopt.com}).
-\item {\bf Yelp Blog:} Wrote several posts announcing the open sourcing of MOE, the Yelp Dataset Challenge and more. \texttt{bit.ly/1x73xdr}, \texttt{bit.ly/1oCCZvv}, \texttt{bit.ly/1sOsEBS}, \texttt{bit.ly/1plX7Hk}
-\item {\bf Press:} WSJ: \texttt{on.wsj.com/VaOvqQ}, Cornell: \texttt{bit.ly/1oB2dzm},  DIEXIS: \texttt{bit.ly/1oofbl4}
 
 \end{itemize}
 
@@ -172,13 +176,17 @@
 
 \begin{itemize}
 
-\item {\bf Numerical Analysis and Computer Science:} Machine Learning, Data Mining, Optimization, Computational Science, Artificial Intelligence, Linear Algebra, Monte Carlo Methods, ODEs, PDEs, Iterative Methods, Parallel Programming, Distributed Systems, Data Structures
-
-\item {\bf Tech Stack:} Python, numerical libraries, linux, git, vim
-
-\item {\bf Public Speaking:} I've given several hundred technical talks to audiences at machine learning conferences, Fortune 500 boards, and beyond.
-
-\item Exploring and implementing ideas. Give me an API/dataset and a problem and I will figure it out.
+\item {\bf Programming Language:} C, C++, C\#, Java, Dart, Python, JavaScript, Bash, CSS, HTML
+\item {\bf Real-Time OS: } Arm MbedOS, MicroC/OS-II, FreeRTOS, RT-Linux
+\item {\bf Cross Platform: } Qt, Xamarin, Flutter
+\item {\bf Web-Backend: } .Net Core MVC, LoopBack Node.js, SignalR
+\item {\bf Web-Frontend: } Vue.js
+\item {\bf Database: } MongoDB, SQLServer
+\item {\bf Build System: } CMake, Make, QMake
+\item {\bf Container: } Docker
+\item {\bf Version Control: } Git
+\item {\bf Documentation: } Doxygen
+\item {\bf CI/CD: } Jenkins, Travis, Gitlab CI
 
 \end{itemize}
 

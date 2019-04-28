@@ -1,0 +1,129 @@
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2008 Nathaniel Johnston <nathaniel@nathanieljohnston.com> http://www.nathanieljohnston.com
+% (c) 2011 Scott Clark <sc932@cornell.edu> http://cam.cornell.edu/~sc932
+%
+
+%This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+\newlength{\outerbordwidth}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{tocloft}
+\usepackage{etoolbox}
+\robustify\cftdotfill
+
+%-----------------------------------------------------------
+%Edit these values as you see fit
+\setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
+\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+
+%-----------------------------------------------------------
+%Margin setup
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{-0.25in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.75in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{\vspace{8pt}
+  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+    \begin{shaded}
+
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+    \end{shaded}
+  }\vspace{-5pt}
+}
+
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
+%-----------------------------------------------------------
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+
+\textbf{{\Large Ernita Dewi Puspitasari}} & \textbf{\today} \\
+\texttt{ernita.dewi91@gmail.com} \\
+\texttt{+46764091032, +6281380260279}
+
+\end{tabular*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Summary}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Senior Auditor with more than 3.5 years experience. Skilled in planned and directed financial audit to provide assurance regarding the clients' financial statements in accordance with Financial Accounting Standards and International Audit Standards. Currently located in Stockholm, Sweden and available to work remotely immediately. Will be in Indonesia in June.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Work Experience}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+
+\item
+	\ressubheading{PricewaterhouseCoopers}{Jakarta, Indonesia}{Senior Associate Auditor}{June 2013 - January 2017}
+  \begin{itemize}
+    \resitem{Planned audit procedures that allign with auditing standard and PSAK as well as prepared the budgets and resources to ensure the audit would go smoothly.}
+    \resitem{Coordinated the team and its audit assignments to ensure that the team was aware of clients' business processes and current relevant issues that might impact their audit procedures.}
+    \resitem{Identified and assessed risk of material misstatements of financial statements due to fraud, and assessed internal control (if necessary) to ensure the control is effective.}
+    \resitem{Designed and implemented responses to material misstatement including performed and tested the appropriateness of  journal entry testing.}
+    \resitem{Communicated audits findings to the manager and the clients effectively.}
+	\end{itemize}
+
+\item
+	\ressubheading{Deloitte}{Jakarta, Indonesia}{Junior Auditor}{January 2013 - May 2013}
+  \begin{itemize}
+    \resitem{Responsible in doing financial audits in a particular area such as cash and cash equivalent, account payable, advance and pre-payment, property plant and equipment, and general and administrative expenses.}
+	\end{itemize}
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Education}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+
+\item
+	\ressubheading{University of Indonesia}{Jakarta, Indonesia}{B.Ec, Accounting}{2009 - 2013}
+	\begin{itemize}
+    \resitem{Graduated Magna Cum Laude with a Bachelor of Economics degree in 3.5 years.}
+    \resitem{Extracurricular: The controller in the Student Executive Board. Managed and kept track of monthly budget for all departments as well as reported financial statements of the organization.}
+	\end{itemize}
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Skills}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Financial Audit and Accounting, working with numbers and analyzing statistical and financial data, analyzing financial statements and draft reports, as well as capability in working with a team or independently.
+
+\end{document}
