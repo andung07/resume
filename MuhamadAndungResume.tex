@@ -6,7 +6,7 @@
 
 %This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
 
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,9pt]{article}
 \newlength{\outerbordwidth}
 \pagestyle{empty}
 \raggedbottom
@@ -29,11 +29,11 @@
 \setlength{\headheight}{-0.25in}
 \setlength{\headsep}{0in}
 \setlength{\oddsidemargin}{-0.25in}
-\setlength{\paperheight}{11in}
-\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{12in}
+\setlength{\paperwidth}{9in}
 \setlength{\tabcolsep}{0in}
-\setlength{\textheight}{9.75in}
-\setlength{\textwidth}{7in}
+\setlength{\textheight}{10.7in}
+\setlength{\textwidth}{7.4in}
 \setlength{\topmargin}{-0.3in}
 \setlength{\topskip}{0in}
 \setlength{\voffset}{0.1in}
@@ -45,45 +45,36 @@
   \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
     \begin{shaded}
 
-\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{3pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[7.2in][l]{#1} \vphantom{p\^{E}}}}}}
     \end{shaded}
-  }\vspace{-5pt}
+  }\vspace{-13pt}
 }
 
 \newcommand{\ressubheading}[4]{
-\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+\begin{tabular*}{7.0in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
 		\textbf{#1} & #2 \\
         \textit{#3} & \textit{#4} \\
-\end{tabular*}\vspace{-6pt}}
-
-\newcommand{\ressubheadingwithtext}[4]{
-\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
-		\textbf{#1} & #2 \\
-        \textit{#3} & \textit{#4} \\
-\end{tabular*}\vspace{2pt}}
-
-\newcommand{\ressubheadingtext}[1]{
-    \textnormal{#1}\vspace{-6pt}
-}
+\end{tabular*}\vspace{-6.3pt}}
 
 %-----------------------------------------------------------
 \begin{document}
 
-\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\begin{tabular*}{7.4in}{l@{\extracolsep{\fill}}r}
 
-\textbf{{\Large Muhamad Andung Muntaha}} & \textbf{\today} \\
-\texttt{muam@kth.se} & Stockholm, Sweden \\
-\texttt{+46764091032, +6281380260278}
+  \textbf{{\Large Muhamad Andung Muntaha}} & Stockholm, Sweden \\
+  \texttt{muam@kth.se} & \today \\
+  \texttt{+46764091032, +6281380260278}
 
 \end{tabular*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\resheading{Profile}
-
+%%%%%%%%%% Summary %%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}\vspace{-5pt}
 
-A T-Profile software engineer with a demonstrated history in delivering professional projects using various technology. I am passionate in writing software to build and integrate complex systems. My skills vary from working with low-level stuff up to building distributed systems. I adapt quickly to a new environment and deliver instant result expected by the organization.
+\begin{flushleft}
+  A T-profile software engineer with a demonstrated history in delivering professional projects using various technology. I am passionate in writing software to build and integrate complex systems. My skills vary from working with low-level stuff up to building distributed systems. I adapt quickly and strive to contribute more to the organization.
+\end{flushleft}\vspace{-20pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -93,52 +84,43 @@ A T-Profile software engineer with a demonstrated history in delivering professi
 
 \begin{itemize}
 
-\item
-    \ressubheadingwithtext{Scania Sverige}{Stockholm, Sweden}{Thesis Worker in Real-Time Systems}{January 2019 - June 2019}
-    \ressubheadingtext{Working on a real-time system running on RT-Linux for the hardware-in-the-loop integration testing environment. The main task is to ensure that the real-time requirements are met while the system is having different load in order to produce a correct testing result.}
-	\begin{itemize}
-      \resitem{RT-Linux user-space programming in C and C++ utilising the standard library and the POSIX API.}
-      \resitem{Developed Python scripts to automate parameterised execution time data gathering.}
-      \resitem{Analysed the system's schedulability using response time analysis theorem.}
-	\end{itemize}
+  \item
+        \ressubheading{Scania Sverige}{Stockholm, Sweden}{Thesis Worker in Real-Time Systems}{January 2019 - June 2019}
+        \begin{itemize}
+          \resitem{Reduced HIL real-time simulator troubleshooting time by developing logging \& monitoring system.}
+          % \resitem{Maintained the real-time requirement of RT-Linux tasks by offloading non-crucial functionality into low priority tasks.}
+          \resitem{Improved the system development process by introducing a formal schedulability analysis method based on time demand analysis to validate system's timing requirement.}
+        \end{itemize}
 
-\item
-    \ressubheadingwithtext{Freelance}{Stockholm, Sweden}{Embedded Linux Developer}{August 2018 - December 2018}
-    \ressubheadingtext{Built a cellular network automatic testing device comprises of a single board computer running embedded Debian Linux, a cellular module connected through serial port, and a touchscreen.}
-	\begin{itemize}
-        \resitem{Developed an application in Qt using C++, JavaScript, and QML.}
-        \resitem{Wrote bash shell scripts to communicate with host's OS features.}
-        \resitem{Implemented communication to cloud backend through HTTPS REST API.}
-	\end{itemize}
+  \item
+        \ressubheading{Freelance}{Stockholm, Sweden}{Embedded Linux Developer}{August 2018 - December 2018}
+        \begin{itemize}
+          \resitem{Delivered 2 cellular network automatic testing devices to the client which were developed using Qt.}
+        \end{itemize}
 
-\item
-    \ressubheadingwithtext{Ontel AB}{Stockholm, Sweden}{Embedded Software Developer}{March 2018 - December 2019}
-    \ressubheadingtext{Designed and implemented firmware using ARM MbedOS in C++ for IoT edge device satisfying limited power and unreliable network constraint.}
-    \begin{itemize}
-        \resitem{Developed a custom driver for a particular cellular module.}
-        \resitem{Implemented a lightweight and secure communication mechanism to cloud backend using CoAP over UDP utilising DTLS encryption.}
-        \resitem{Implemented communication with subsystems including 3d accelerometer sensor, power management IC, and security module through i2c.}
-    \end{itemize}
+  \item
+        \ressubheading{Ontel AB}{Stockholm, Sweden}{Embedded Software Developer}{March 2018 - December 2019}
+        \begin{itemize}
+          \resitem{Delivered 2 types of bike sharing IoT hardware prototypes by designing and implementing the software in Arm MbedOS while maintaining the system's low-power requirement and addressing an unreliable network constraint.}
+        \end{itemize}
 
-\item
-    \ressubheadingwithtext{KTH MIST Student Satellite Project}{Stockholm, Sweden}{Embedded Software Developer}{March 2018 - December 2018}
-    \ressubheadingtext{Responsible in implementing end-to-end communication between ground station and satellite's main onboard computer.}
-    \begin{itemize}
-        \resitem{Designed and implemented a MISRA-C compliance radio communication API in FreeRTOS using C language which communicate to satellite's radio module subsystem through i2c. It uses CCSDS protocol encapsulated in AX.25 protocol.}
-        \resitem{Developed a radio link communication simulator using Arduino boards.}
-        \resitem{Extended the ground station software using Microsoft WPF in C\#.}
-    \end{itemize}
+  \item
+        \ressubheading{KTH MIST Student Satellite Project}{Stockholm, Sweden}{Embedded Software Developer}{March 2018 - December 2018}
+        \begin{itemize}
+          \resitem{Achieved a significant milestone in the end-to-end satellite communication by implementing a MISRA-C compliance radio communication API.}
+          \resitem{Minimized the functional testing time by introducing a radio link communication simulator.}
+          \resitem{Introduced a proof-of-concept in processing experiment data by extending the ground station software.}
+        \end{itemize}
 
-\item
-    \ressubheading{Schlumberger}{Jakarta, Indonesia}{IT Engineer \& Software Developer}{November 2013 - June 2017}
-    \begin{itemize}
-        \resitem{\textbf{Web Development: }Gathered requirements, proposed, and developed new business applications to transform current business processes using Microsoft Sharepoint and JavaScript.}
-        \resitem{\textbf{Mobile Development: }Extended existing business applications to have its mobile version using Microsoft Xamarin and C\#.}
-        \resitem{\textbf{Operation Support: }Managed and ensured the availability of IT Services on site (servers, networking, disaster recovery, etc.) as well as provided second level of user support in handling IT issues.}
-        \resitem{\textbf{Transformation Agent: }Took a role as an enabler in digital transformation by providing business applications based on Lean Six Sigma methodology. It mainly tracked several defined KPI which then provided real-time feedbacks to the stakeholders. Hours of non productive time had been eliminated and million dollars of soft cost saving had been claimed.}
-    \end{itemize}
+  \item
+        \ressubheading{Schlumberger}{Jakarta, Indonesia}{IT Engineer \& Application Developer}{November 2013 - June 2017}
+        \begin{itemize}
+          \resitem{Saved \$5.5M soft cost savings by introducing 15 Sharepoint applications, 2 web applications, and 2 mobile applications which transformed internal business processes to reduce non-productive time, preventing risks, and increasing revenue.}
+          \resitem{Nominated as the winner of transformation award by developing a web and mobile application to increase Account Receivable turnover ratio.}
+          \resitem{Awarded as the best IT engineer based on user satisfaction feedbacks as well as excellent performance in maintaining IT services availability.}
+        \end{itemize}
 
-\end{itemize}
+\end{itemize} \vspace{-15pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -148,25 +130,21 @@ A T-Profile software engineer with a demonstrated history in delivering professi
 
 \begin{itemize}
 
-\item
-    \ressubheadingwithtext{KTH Royal Institute of Technology}{Stockholm, Sweden}{M.Sc. Embedded Systems, minor in Embedded Software}{August 2017 - June 2019}
-    \ressubheadingtext{Full 2 years scholarship. Relevant courses: }
-    \begin{itemize}
-		\resitem{\textbf{Embedded Systems: }Understanding embedded systems development ranging from realtime task scheduling, cache, memory, I/O, ISR and RTOS. Including a lab assignment which covered realtime application development using ADA and Micro C OS II RTOS running on a single core FPGA.}
-        \resitem{\textbf{Embedded Software: }Thorough task scheduling concept and correct methodology in designing and modelling realtime system. Including a lab assignment to convert images to ASCII art which satisfy a throughput requirement running on multi-core FPGA.}
-        \resitem{\textbf{Software Reliability: }Covered several techniques to generate efficient test cases which covered white box testing, black box testing, and requirement based testing.}
-        \resitem{\textbf{Modern Method in Software Engineering: }Covered ranging methodology in software development life cycle and a lab assignment to practice Agile methodology.}
-        \resitem{\textbf{Networked Systems Security: }Covered fundamental concepts and technologies related to the security of modern, state-of-the-art networked systems.}
-	\end{itemize} 
+  \item
+        \ressubheading{KTH Royal Institute of Technology}{Stockholm, Sweden}{M.Sc. Embedded Systems, minor in Embedded Software}{August 2017 - June 2019}
+        \begin{itemize}
+          \resitem{Related courses: Embedded Systems, Embedded Software, Software Reliability, Compiler and Execution Environment, Networked Systems Security, and Modern Method in Software Engineering.}
+          \resitem{Thesis: Non-intrusive Logging and Monitoring System of A Parameterized Hardware-in-the-loop Real-Time Simulator.}
+        \end{itemize}
 
-\item
-	\ressubheading{10 Nopember Institute of Technology}{Surabaya, Indonesia}{B.E. Electrical Engineering, minor in Computer Engineering}{August 2009 - July 2013}
-	\begin{itemize}
-    \resitem{ Thesis: Self-localization of Humanoid Robot Inside Soccer Field Using Triangulation and Particle Filter Methods.}
-    \resitem{Simulation was done in Webots robot simulator and written in C++ utilising OpenCV library. It then cross compiled to Darwin-OP humanoid robot platform running on embedded Linux.}
-	\end{itemize}
+  \item
+        \ressubheading{10 Nopember Institute of Technology}{Surabaya, Indonesia}{B.Eng. Electrical Engineering, minor in Computer Engineering}{August 2009 - July 2013}
+        \begin{itemize}
+          \resitem{Related courses: Embedded Systems, Computer Architecture, Data Communication, Computer Networks, Computer Vision, Algorithm \& Data Structure, and Artificial Intelligence.}
+          \resitem{Thesis: Self-localization of Humanoid Robot Inside Soccer Field Using Triangulation and Particle Filter Methods.}
+        \end{itemize}
 
-\end{itemize}
+\end{itemize} \vspace{-15pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -176,28 +154,28 @@ A T-Profile software engineer with a demonstrated history in delivering professi
 
 \begin{itemize}
 
-\item {\bf Programming Language:} C, C++, C\#, Java, Dart, Python, JavaScript, Bash, CSS, HTML
-\item {\bf Real-Time OS: } Arm MbedOS, MicroC/OS-II, FreeRTOS, RT-Linux
-\item {\bf Cross Platform: } Qt, Xamarin, Flutter
-\item {\bf Web Technology: } .Net Core MVC, LoopBack Node.js, SignalR, Vue.js
-\item {\bf Database: } MongoDB, SQLServer
-\item {\bf Other: } CMake, Make, QMake, Docker, Git, Doxygen,
+  \resitem{\textbf{Programming Language:} C, C++, C\#, Java, Python, JavaScript, Bash}
+  \resitem{\textbf{Real-Time OS:} Arm MbedOS, MicroC/OS-II, FreeRTOS, RT-Linux}
+  \resitem{\textbf{Cross Platform:} Qt, Xamarin}
+  \resitem{\textbf{Web Technology:} .Net Core MVC, SignalR, Vue.js}
+  \resitem{\textbf{Database:} MongoDB, SQLServer}
+  \resitem{\textbf{Other: } Build systems, CI/CD pipelines, Docker, Git, Doxygen}
 
-\end{itemize}
+\end{itemize} \vspace{-15pt}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\resheading{Certifications}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{itemize}
+% \resheading{Certifications}
 
-\item Cisco Certified Network Associate Routing and Switching (CCNA)
-\item ISC2 System Security Certified Practitioner (SSCP)
-\item ITIL Foundation - IT Service Management
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\end{itemize}
+% \begin{itemize}
+
+% \item Cisco Certified Network Associate Routing and Switching (CCNA)
+% \item ISC2 System Security Certified Practitioner (SSCP)
+% \item ITIL Foundation - IT Service Management
+
+% \end{itemize}
 
 \end{document}
