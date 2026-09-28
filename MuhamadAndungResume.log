@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.4.11)  6 JUL 2026 09:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.9.28)  28 SEP 2026 15:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/andung/repo/resume/MuhamadAndungResume.tex
-(/Users/andung/repo/resume/MuhamadAndungResume.tex
+**/home/andung/repo/resume/MuhamadAndungResume.tex
+(/home/andung/repo/resume/MuhamadAndungResume.tex
 LaTeX2e <2025-11-01>
-L3 programming layer <2026-03-20>
-(/Users/andung/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
+L3 programming layer <2026-01-19>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
-(/Users/andung/Library/TinyTeX/texmf-dist/tex/latex/base/size10.clo
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count275
@@ -22,18 +22,18 @@ File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \c@table=\count282
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\bibindent=\dimen150
+\bibindent=\dimen148
 )
 \outerbordwidth=\skip51
- (/Users/andung/Library/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (/Users/andung/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
- (/Users/andung/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
-) (/Users/andung/Library/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -43,16 +43,16 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (/Users/andung/Library/TinyTeX/texmf-dist/tex/latex/xcolor/svgnam.def
+) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/svgnam.def
 File: svgnam.def 2024/09/29 v3.02 Predefined colors according to SVG 1.1 (UK)
-) (/Users/andung/Library/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip52
-\fb@frw=\dimen151
-\fb@frh=\dimen152
-\FrameRule=\dimen153
-\FrameSep=\dimen154
-) (/Users/andung/Library/TinyTeX/texmf-dist/tex/latex/tocloft/tocloft.sty
+\fb@frw=\dimen149
+\fb@frh=\dimen150
+\FrameRule=\dimen151
+\FrameSep=\dimen152
+) (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 51.
 \cftparskip=\skip53
@@ -88,11 +88,11 @@ Package tocloft Info: The document has section divisions on input line 51.
 \cftbeforetabskip=\skip81
 \cfttabindent=\skip82
 \cfttabnumwidth=\skip83
-) (/Users/andung/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count285
-) (/Users/andung/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count286
 )
 
@@ -116,6 +116,20 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
 LaTeX Font Info:    ... okay on input line 60.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
 LaTeX Font Info:    ... okay on input line 60.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count287
+\scratchdimen=\dimen153
+\scratchbox=\box53
+\nofMPsegments=\count288
+\nofMParguments=\count289
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count290
+\MPscratchDim=\dimen154
+\MPnumerator=\count291
+\makeMPintoPDFobject=\count292
+\everyMPtoPDFconversion=\toks18
+)
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 62.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -125,25 +139,25 @@ Overfull \vbox (18.06749pt too high) has occurred while \output is active []
 
  [1
 
-{/Users/andung/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Overfull \vbox (18.06749pt too high) has occurred while \output is active []
 
  [2] (./MuhamadAndungResume.aux)
  ***********
 LaTeX2e <2025-11-01>
-L3 programming layer <2026-03-20>
+L3 programming layer <2026-01-19>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1928 strings out of 469278
- 29870 string characters out of 5463709
- 475132 words of memory out of 5000000
- 30815 multiletter control sequences out of 15000+600000
+ 2231 strings out of 469514
+ 33585 string characters out of 5470072
+ 475867 words of memory out of 5000000
+ 30922 multiletter control sequences out of 15000+600000
  629479 words of font info for 46 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
- 53i,10n,84p,921b,259s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </Users/andung/Library/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></Users/andung/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/andung/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/andung/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/andung/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></Users/andung/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></Users/andung/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on MuhamadAndungResume.pdf (2 pages, 107058 bytes).
+ 14 hyphenation exceptions out of 8191
+ 53i,10n,84p,920b,218s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/andung/.texlive2025/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on MuhamadAndungResume.pdf (2 pages, 107905 bytes).
 PDF statistics:
  47 PDF objects out of 1000 (max. 8388607)
  28 compressed objects within 1 object stream
